@@ -34,7 +34,7 @@
             <div class="navbar-inner">
                 <div class="container">
                     <a href="#" class="brand">
-                        <img src="images/afg_logo.jpg" width="120" height="40" alt="Logo" />
+                        <img src="images/afg_images/afg_logo.jpg" width="120" height="40" alt="Logo" />
                         <!-- This is anyflexographics logo -->
                     </a>
                     <!-- Navigation button, visible on small resolution -->
@@ -73,7 +73,7 @@
                         <p>Manufacturer of white nylon stereos, rubber stereos & photo polymer stereos since 2010 in Mumbai, Maharashtra.</p>
                         <!-- <a href="#" class="da-link button">Read more</a> -->
                         <div class="da-img">
-                            <img src="images/afg_logo.jpg" alt="image01" width="320">
+                            <img src="images/afg_images/afg_logo.jpg" alt="image01" width="320">
                         </div>
                     </div>
                     <!-- End of First Slide -->
@@ -83,7 +83,7 @@
                         <p> We offer a very good quality of White Nylon at low price and with better quality. A large amount of White Nylon are manufactured here with high quality. The average mileage of White Nylon Stereos are approximately 5 lack bags</p>
                        <!--  <a href="#" class="da-link button">Read more</a> -->
                         <div class="da-img">
-                            <img src="images/white-nylon-stereos-500x500.jpg" width="320" alt="image02">
+                            <img src="images/afg_images/white-nylon-stereos-500x500.jpg" width="320" alt="image02">
                         </div>
                     </div>
                     <!-- End second slide -->
@@ -93,7 +93,7 @@
                         <p>We are offer a very good quality of the Rubber Stereo. Thickness of Rubber Stereo is 6 mm and talking about the mileage of the Rubber Stereo is approximately 2 lack bags.</p>
                         <!-- <a href="#" class="da-link button">Read more</a> -->
                         <div class="da-img">
-                            <img src="images/rubber-stereos-500x500.jpg" width="320" alt="image03">
+                            <img src="images/afg_images/rubber-stereos-500x500.jpg" width="320" alt="image03">
                         </div>
                     </div>
                     <!-- Start third slide -->
@@ -103,7 +103,7 @@
                         <p>Capacity of the Photo Polymers Stereo ate to print approximately 5 to 6 lack bags. Printing quality of Photo Polymer are same as digital printing. We are offer basically 3 type of photo polymer stereo in size. 1). 2.84 mm 2) 1.84mm 3). 4.7mm</p>
                        <!--  <a href="#" class="da-link button">Read more</a> -->
                         <div class="da-img">
-                            <img src="images/photo-polymer-2-84-stereos-500x500.jpg" width="320" alt="image03">
+                            <img src="images/afg_images/photo-polymer-stereos-500x500.jpg" width="320" alt="image03">
                         </div>
                     </div>
                     <!-- Start Fourth slide -->
@@ -129,29 +129,43 @@
                 </div>
                 <div class="row-fluid">
                     <div class="span4">
-                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                        <div class="overlay-button">
+                            <button style="font-size:30px;cursor:pointer" onclick="openPhotoPolymerImgDialog()">Click here!</button>
+                        </div> 
                         <div class="centered service">
-
+                             
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/photo-polymer-2-84-stereos-500x500.jpg" alt="service 1">
+                                <img class="img-circle" src="images/afg_images/photo-polymer-stereos-500x500.jpg" alt="service 1">
                             </div>
                             <h3>Photo Polymer Stereos</h3>
                             <p>At our firm Photo Polymer Stereos are manufactured. We believe to deliver a better and smooth quality of Photo Polymer to our client with best market price. The full satisfaction of our client is most important for us. A huge amount of Photo Polymer Stereos are supplied to our clients everyday. Capacity of the Photo Polymers Stereo ate to print approximately 5 to 6 lack bags. Printing quality of Photo Polymer are same as digital printing. We are offer basically 3 type of photo polymer stereo in size. 1). 2.84 mm 2) 1.84mm 3). 4.7mm</p>
                         </div>
                     </div>
-                    <div id="myNav" class="overlay">
-                         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                         <img align="center" src="images/photo-polymer-2-84-stereos-500x500.jpg" alt="service 1">
+                  
+                    <div id="PhotoPolymerImgDialog" class="overlay">
+                         <a href="javascript:void(0)" class="closebtn" onclick="closePhotoPolymerImgDialog()">&times;</a>
+                         <img style="width:50%;" src="images/afg_images/photo-polymer-stereos-500x500.jpg" alt="service 1">
                     </div>
+
                     <div class="span4">
+                        <div class="overlay-button">
+                            <button style="font-size:30px;cursor:pointer" onclick="openWhiteNylonImgDialog()">Click here!</button>
+                        </div> 
                         <div class="centered service">
                             <div class="circle-border zoom-in">
-                                <img class="img-circle" src="images/Service2.png" alt="service 2" />
+                                <img class="img-circle" src="images/afg_images/white-nylon-stereos-500x500.jpg" alt="White Nylon Stereo"/>
                             </div>
-                            <h3>Powerfull Theme</h3>
+                            <h3>White Nylon Stereos</h3>
                             <p>We Create Modern And Powerful Theme With Lots Animation And Features</p>
                         </div>
                     </div>
+                    <div id="WhiteNylonImgDialog" class="overlay">
+                         <a href="javascript:void(0)" class="closebtn" onclick="closeWhiteNylonImgDialog()">&times;</a>
+                         <img style="width:50%;" src="images/afg_images/white-nylon-stereos-500x500.jpg" alt="service 1">
+                    </div>
+
+
+
                     <div class="span4">
                         <div class="centered service">
                             <div class="circle-border zoom-in">
@@ -999,12 +1013,19 @@
         <![endif]-->
         <script type="text/javascript" src="js/app.js"></script>
         <script>
-            function openNav() {
-                document.getElementById("myNav").style.width = "100%";
+            function openPhotoPolymerImgDialog() {
+                document.getElementById("PhotoPolymerImgDialog").style.width = "100%";
             }
 
-            function closeNav() {
-                document.getElementById("myNav").style.width = "0%";
+            function closePhotoPolymerImgDialog() {
+                document.getElementById("PhotoPolymerImgDialog").style.width = "0%";
+            }
+            function openWhiteNylonImgDialog() {
+                document.getElementById("WhiteNylonImgDialog").style.width = "100%";
+            }
+
+            function closeWhiteNylonImgDialog() {
+                document.getElementById("WhiteNylonImgDialog").style.width = "0%";
             }
         </script>
     </body>
