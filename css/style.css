@@ -133,8 +133,8 @@ p {
     text-align: center;
 }
 .highlighted-box {
-    background:#F4F8F9;
-    padding:20px 30px;
+   /* background:#F4F8F9;*/
+    padding:0px 30px;
 }
 .highlighted-box h1 {
     margin:0px;
@@ -952,6 +952,93 @@ p {
     margin-right: auto;
 }
 .overlay-button{
-    margin-left: 110px;
+    margin-left: 85px;
     margin-bottom: -30px;
+}
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 100px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button2 {
+    background-color: #FBD43C; 
+    color: black; 
+    border: 2px solid #181A1C;
+}
+
+.button2:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+.read-more-btn{
+    position: relative;
+    font-size: 12px; 
+    padding: 0px; 
+    width: 140px; 
+    height: 40px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    font-size: 1.2em;
+}
+.read-more-btn:before, .read-more-btn:after{
+   
+    top: 10px;
+    bottom: 0;
+    right: 0;
+    padding-top: inherit;
+    font-size: 1.0em;
+    content: "\00a0";
+    font-family: 'FontAwesome',sans-serif;
+}
+.arrow:after {
+    content: "\F054";
+
+}
+
+.read-more-para{
+    margin-top: 45px;
+    margin-left: 80px;
+    margin-right: 150px;
+    line-height: 1.5em;
 }
