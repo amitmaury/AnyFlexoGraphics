@@ -2,10 +2,20 @@
     "name": "anyflexographics",
     "version": "1.0.0",
     "description": "",
+    "main": "web.js",
     "scripts": {
         "start": "node server.js"
     },
     "dependencies": {
         "express": "^4.17.1"
-    }
+    },
+    "keywords": [
+        "anyflexographics",
+        "heroku"
+    ],
+    "engines": {
+        "node": "12.16.1"
+    },
+    "author": "Any Flexo Graphics",
+    "license": "MIT"
 }
