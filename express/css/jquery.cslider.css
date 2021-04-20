@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     top: 0px;
-    left: 0px;
+    left: 3px;
     text-align: left;
 }
 .da-slide-current {
@@ -95,17 +95,17 @@
     font-weight: normal;
 }
 .da-slide p {
-    width: 45%;
+    width: 53%;
     padding:0px;
-    top: 230px;
+    top: 180px;
     color: #fff;
-    height: 90px;
+    height: 190px;
     overflow: hidden;
     font-weight: 400;
 }
 .da-slide .da-img {
     text-align: center;
-    width: 40%;
+    width: 35%;
     top: 80px;
     height: 256px;
     line-height: 360px;
@@ -147,7 +147,7 @@
 .da-arrows span {
     position: absolute;
     height: 100%;
-    width: 45px;
+    width: 10%;
     cursor: pointer;
     z-index: 900;
     opacity: 0;
@@ -169,12 +169,12 @@
     background-position: top right;
 }
 .da-arrows span.da-arrows-prev {
-    left: 15px;
-    background:transparent url(../images/Left.png) no-repeat center center;
+    left: 0px !important;
+    background:transparent url(../images/left-arrow.png) no-repeat center center;
 }
 .da-arrows span.da-arrows-next {
-    right: 15px;
-    background:transparent url(../images/Right.png) no-repeat center center;
+    right: 0px;
+    background:transparent url(../images/right-arrow.png) no-repeat center center;
     
 }
 .da-slide-current h2, .da-slide-current h4, .da-slide-current p, .da-slide-current .da-link {
@@ -1337,3 +1337,19 @@
         display:none;
     } 
 }
+.da-slide-photo-polymer{
+    height: 200px  !important;
+}
+.da-slide-img{
+    line-height: 0px !important;
+}
+.da-slide-img img{
+    width: 300px !important;
+    height: 300px !important;
+}
+.ajay {
+    color: #181A1C;
+    display: list-item;          /* This has to be "list-item"                                               */
+    list-style-type: disc;       /* See https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type     */
+    list-style-position: inside;
+  }
